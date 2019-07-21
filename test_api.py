@@ -2,7 +2,7 @@ import os
 import pytest
 from api import api
 
-@pytest.fixture
+@pytest.fixture()
 def client():
     api.config['TESTING'] = True
 
