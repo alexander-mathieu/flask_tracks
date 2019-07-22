@@ -10,10 +10,10 @@ def home():
     return '<h1>Welcome to the FastTracks Microservice!</h1>'
 
 @api.route('/api/v1/recommendations', methods = ['GET'])
-def parse_response():
+def parse_request():
     ids = request.args.get('song_ids')
     limit = request.args.get('limit')
-    return spotify_service.get_recommended_songs(ids, limit)
+    return jsonify(spotify_service.get_recommended_songs(ids, limit))
 
 if __name__ == '__main__':
     api.run()
