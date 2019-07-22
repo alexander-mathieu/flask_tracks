@@ -1,0 +1,143 @@
+interactions:
+- request:
+    body: grant_type=client_credentials
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Basic SPOTIFY_CLIENT_AUTH
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://accounts.spotify.com/api/token
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAx2NSw6CMBQA7/LWmBSxxbjDoN1hiRp0RaA8pRI+aYkFjHcX2U4mMx/IpERj0r6t
+        sIEd7ONQ0MElVRCyM+9pdYtHt/QjEfjHS7N6POt8m48UxbrcvD1pppfxDsmJCF7LSBC/sOrq0kmz
+        hAkbcaviOziw1NN+7PC/wEyjnikOndJoUjWPPUaIA0a2iwLfH09sO6WZAAAA
+    headers:
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 21 Jul 2019 23:37:06 GMT
+      Keep-Alive:
+      - timeout=600
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQDP5x10kAD6SGt5kXQy1h7NPA7FTn-fgmb8by5eP2h4v3cszjs3EWO0PGmcNP07dwiU15zr6W6PwNGwiQY
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.spotify.com/v1/recommendations?seed_tracks=50FHmxsLg0xFT53D9DoZLm%2C7v7VdqWOygnY3jaIsoUeCs%2C1269OELfNNvdgMIobuYBBt%2C7q4N0abbhFfLBXJpyO7EzN%2C0FgebSbDmDdXpot4VmsgA6&limit=5
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Alt-Svc:
+      - clear
+      Date:
+      - Sun, 21 Jul 2019 23:37:06 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 google
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      access-control-allow-methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      access-control-allow-origin:
+      - '*'
+      access-control-max-age:
+      - '604800'
+      cache-control:
+      - private, max-age=0
+      content-encoding:
+      - gzip
+      content-type:
+      - application/json; charset=utf-8
+    status:
+      code: 200
+      message: OK
+version: 1

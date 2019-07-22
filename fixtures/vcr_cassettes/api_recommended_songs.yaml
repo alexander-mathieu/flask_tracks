@@ -1,0 +1,156 @@
+interactions:
+- request:
+    body: grant_type=client_credentials
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Basic SPOTIFY_CLIENT_AUTH
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://accounts.spotify.com/api/token
+  response:
+    body:
+      string: '{"access_token":"BQDmiWYPk1cSADpNRt4xpn42L0eYv-l6aIJ4RkY22xepvp5pIy2HceKq8sC-0aI45PhQ6E1-fpQTtxFGiO0","token_type":"Bearer","expires_in":3600,"scope":""}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 22 Jul 2019 22:47:55 GMT
+      Keep-Alive:
+      - timeout=600
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      content-length:
+      - '153'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQDmiWYPk1cSADpNRt4xpn42L0eYv-l6aIJ4RkY22xepvp5pIy2HceKq8sC-0aI45PhQ6E1-fpQTtxFGiO0
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.spotify.com/v1/recommendations?seed_tracks=2MIcpZ7MBeCUEVFDBqU7Ei%2C4v6dF5830rtgjYr0uov248%2C2SpLqYLZ5GQTFTDwA4xwGS&limit=5
+  response:
+    body:
+      string: "{\n  \"tracks\" : [ {\n    \"album\" : {\n      \"album_type\" : \"\
+        ALBUM\",\n      \"artists\" : [ {\n        \"external_urls\" : {\n       \
+        \   \"spotify\" : \"https://open.spotify.com/artist/5snNHNlYT2UrtZo5HCJkiw\"\
+        \n        },\n        \"href\" : \"https://api.spotify.com/v1/artists/5snNHNlYT2UrtZo5HCJkiw\"\
+        ,\n        \"id\" : \"5snNHNlYT2UrtZo5HCJkiw\",\n        \"name\" : \"Epik\
+        \ High\",\n        \"type\" : \"artist\",\n        \"uri\" : \"spotify:artist:5snNHNlYT2UrtZo5HCJkiw\"\
+        \n      } ],\n      \"available_markets\" : [ \"AD\", \"AE\", \"AR\", \"AT\"\
+        , \"AU\", \"BE\", \"BG\", \"BH\", \"BO\", \"BR\", \"CA\", \"CH\", \"CL\",\
+        \ \"CO\", \"CR\", \"CY\", \"CZ\", \"DE\", \"DK\", \"DO\", \"DZ\", \"EC\",\
+        \ \"EE\", \"EG\", \"ES\", \"FI\", \"FR\", \"GB\", \"GR\", \"GT\", \"HK\",\
+        \ \"HN\", \"HU\", \"ID\", \"IE\", \"IL\", \"IN\", \"IS\", \"IT\", \"JO\",\
+        \ \"JP\", \"KW\", \"LB\", \"LI\", \"LT\", \"LU\", \"LV\", \"MA\", \"MC\",\
+        \ \"MT\", \"MX\", \"MY\", \"NI\", \"NL\", \"NO\", \"NZ\", \"OM\", \"PA\",\
+        \ \"PE\", \"PH\", \"PL\", \"PS\", \"PT\", \"PY\", \"QA\", \"RO\", \"SA\",\
+        \ \"SE\", \"SG\", \"SK\", \"SV\", \"TH\", \"TN\", \"TR\", \"TW\", \"US\",\
+        \ \"UY\", \"VN\", \"ZA\" ],\n      \"external_urls\" : {\n        \"spotify\"\
+        \ : \"https://open.spotify.com/album/1e8oyAuXoF4DTtycaUGd7Z\"\n      },\n\
+        \      \"href\" : \"https://api.spotify.com/v1/albums/1e8oyAuXoF4DTtycaUGd7Z\"\
+        ,\n      \"id\" : \"1e8oyAuXoF4DTtycaUGd7Z\",\n      \"images\" : [ {\n  \
+        \      \"height\" : 640,\n        \"url\" : \"https://i.scdn.co/image/88c820afe7a607e8de4043d8dd130f2bb70fa769\"\
+        ,\n        \"width\" : 640\n      }, {\n        \"height\" : 300,\n      \
+        \  \"url\" : \"https://i.scdn.co/image/072d855e026ff09c1d7d8f64ea657e3f3d1b4e02\"\
+        ,\n        \"width\" : 300\n      }, {\n        \"height\" : 64,\n       \
+        \ \"url\" : \"https://i.scdn.co/image/b90fef1d1c69eacde727809b0af5da7905ca71b2\"\
+        ,\n        \"width\" : 64\n      } ],\n      \"name\" : \"\u9B42 Map the Soul\"\
+        ,\n      \"release_date\" : \"2009-03-27\",\n      \"release_date_precision\"\
+        \ : \"day\",\n      \"total_tracks\" : 0,\n      \"type\" : \"album\",\n \
+        \     \"uri\" : \"spotify:album:1e8oyAuXoF4DTtycaUGd7Z\"\n    },\n    \"artists\"\
+        \ : [ {\n      \"external_urls\" : {\n        \"spotify\" : \"https://open.spotify.com/artist/5snNHNlYT2UrtZo5HCJkiw\"\
+        \n      },\n      \"href\" : \"https://api.spotify.com/v1/artists/5snNHNlYT2UrtZo5HCJkiw\"\
+        ,\n      \"id\" : \"5snNHNlYT2UrtZo5HCJkiw\",\n      \"name\" : \"Epik High\"\
+        ,\n      \"type\" : \"artist\",\n      \"uri\" : \"spotify:artist:5snNHNlYT2UrtZo5HCJkiw\"\
+        \n    }, {\n      \"external_urls\" : {\n        \"spotify\" : \"https://open.spotify.com/artist/5EXuZB9s9F3ezkS7zpV8d1\"\
+        \n      },\n      \"href\" : \"https://api.spotify.com/v1/artists/5EXuZB9s9F3ezkS7zpV8d1\"\
+        ,\n      \"id\" : \"5EXuZB9s9F3ezkS7zpV8d1\",\n      \"name\" : \"Kero One\"\
+        ,\n      \"type\" : \"artist\",\n      \"uri\" : \"spotify:artist:5EXuZB9s9F3ezkS7zpV8d1\"\
+        \n    }, {\n      \"external_urls\" : {\n        \"spotify\" : \"https://open.spotify.com/artist/0POlGzHsz34BmE7T8klqQI\"\
+        \n      },\n      \"href\" : \"https://api.spotify.com/v1/artists/0POlGzHsz34BmE7T8klqQI\"\
+        ,\n      \"id\" : \"0POlGzHsz34BmE7T8klqQI\",\n      \"name\" : \"Myk\",\n\
+        \      \"type\" : \"artist\",\n      \"uri\" : \"spotify:artist:0POlGzHsz34BmE7T8klqQI\"\
+        \n    }, {\n      \"external_urls\" : {\n        \"spotify\" : \"https://open.spotify.com/artist/3NdOtTPPaXrCyC7Lpmzyhv\"\
+        \n      },\n      \"href\" : \"https://api.spotify.com/v1/artists/3NdOtTPPaXrCyC7Lpmzyhv\"\
+        ,\n      \"id\" : \"3NdOtTPPaXrCyC7Lpmzyhv\",\n      \"name\" : \"Tablo\"\
+        ,\n      \"type\" : \"artist\",\n      \"uri\" : \"spotify:artist:3NdOtTPPaXrCyC7Lpmzyhv\"\
+        \n    } ],\n    \"available_markets\" : [ \"AD\", \"AE\", \"AR\", \"AT\",\
+        \ \"AU\", \"BE\", \"BG\", \"BH\", \"BO\", \"BR\", \"CA\", \"CH\", \"CL\",\
+        \ \"CO\", \"CR\", \"CY\", \"CZ\", \"DE\", \"DK\", \"DO\", \"DZ\", \"EC\",\
+        \ \"EE\", \"EG\", \"ES\", \"FI\", \"FR\", \"GB\", \"GR\", \"GT\", \"HK\",\
+        \ \"HN\", \"HU\", \"ID\", \"IE\", \"IL\", \"IN\", \"IS\", \"IT\", \"JO\",\
+        \ \"JP\", \"KW\", \"LB\", \"LI\", \"LT\", \"LU\", \"LV\", \"MA\", \"MC\",\
+        \ \"MT\", \"MX\", \"MY\", \"NI\", \"NL\", \"NO\", \"NZ\", \"OM\", \"PA\",\
+        \ \"PE\", \"PH\", \"PL\", \"PS\", \"PT\", \"PY\", \"QA\", \"RO\", \"SA\",\
+        \ \"SE\", \"SG\", \"SK\", \"SV\", \"TH\", \"TN\", \"TR\", \"TW\", \"US\",\
+        \ \"UY\", \"VN\", \"ZA\" ],\n    \"disc_number\" : 1,\n    \"duration_ms\"\
+        \ : 273146,\n    \"explicit\" : false,\n    \"external_ids\" : {\n      \"\
+        isrc\" : \"KRA350800705\"\n    },\n    \"external_urls\" : {\n      \"spotify\"\
+        \ : \"https://open.spotify.com/track/5D1vzchjH805WYLLVpeUjr\"\n    },\n  \
+        \  \"href\" : \"https://api.spotify.com/v1/tracks/5D1vzchjH805WYLLVpeUjr\"\
+        ,\n    \"id\" : \"5D1vzchjH805WYLLVpeUjr\",\n    \"is_local\" : false,\n \
+        \   \"name\" : \"Map the Soul (Worldwide Version) [feat. Tablo, MYK & Kero\
+        \ One]\",\n    \"popularity\" : 34,\n    \"preview_url\" : \"https://p.scdn.co/mp3-preview/9c92aea688b39003088c4ef0478b349b553b91fa?cid=60b942e7d1dd4361910942170e4bff71\"\
+        ,\n    \"track_number\" : 9,\n    \"type\" : \"track\",\n    \"uri\" : \"\
+        spotify:track:5D1vzchjH805WYLLVpeUjr\"\n  } ]\n}"
+    headers:
+      Alt-Svc:
+      - clear
+      Date:
+      - Mon, 22 Jul 2019 22:47:55 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 google
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - Accept, Authorization, Origin, Content-Type, Retry-After
+      access-control-allow-methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      access-control-allow-origin:
+      - '*'
+      access-control-max-age:
+      - '604800'
+      cache-control:
+      - private, max-age=0
+      content-length:
+      - '19357'
+      content-type:
+      - application/json; charset=utf-8
+    status:
+      code: 200
+      message: OK
+version: 1
