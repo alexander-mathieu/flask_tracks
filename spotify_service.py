@@ -34,5 +34,5 @@ def __parse_response(recommendations):
                 'album_art_url': song['album']['images'][0]['url'],
                 'length': song['duration_ms']
                }
-    song_objects.append(item)
+        song_objects.append(item)
     return song_objects
