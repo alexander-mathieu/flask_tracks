@@ -9,7 +9,7 @@ __Installation:__
 - You will also need a `.env` file with a `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET`, gained from creating an App with Spotify.
 
 __Endpoints:__
-- `/api/v1/song_ids=COMMA_SEPERATED_LIST_OF_SPOTIFY_SONG_IDS_MAX_5&limit=INTEGER_FROM_ONE_TO_FIFTY`
+- `/api/v1/recommended?song_ids=COMMA_SEPERATED_LIST_OF_SPOTIFY_SONG_IDS_MAX_5&limit=INTEGER_FROM_ONE_TO_FIFTY`
 
 __Tests:__
 - run `pytest`
