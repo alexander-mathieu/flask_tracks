@@ -9,7 +9,7 @@ api = Flask(__name__)
 def home():
     return '<h1>Welcome to the FastTracks Microservice!</h1>'
 
-@api.route('/api/v1/recommendations', methods = ['GET'])
+@api.route('/api/v1/recommended', methods = ['GET'])
 def parse_request():
     ids = request.args.get('song_ids')
     limit = request.args.get('limit')
