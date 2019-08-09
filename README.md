@@ -19,7 +19,7 @@ You will also need to create a `.env` file with a `SPOTIFY_CLIENT_ID` and `SPOTI
 
 ## API Exploration
 
-Once installation is complete, explore the various API endpoints with the following steps:
+Once installation is complete, the single endpoint can be utilized with the following steps:
 * From the `flask_tracks` project directory, boot up a server with `python api.py`
 * Open your browser, and visit `http://localhost:3000/`
 * Append the following URI to `http://localhost:3000/` in your browser:
